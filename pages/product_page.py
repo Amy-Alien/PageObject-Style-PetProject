@@ -6,7 +6,6 @@ class ProductPage(BasePage):
 
     def should_be_product_page(self):
         self.add_product_to_basket()
-        self.solve_quiz_and_get_code()
         self.should_be_product_name_in_success_message(self.get_product_name())
         self.should_be_price_in_basket_equal_product_price(self.get_product_price())
 
